@@ -28,7 +28,7 @@ function SieveOfAtkin(limit) {
                 sieve[n >> 3] ^= 1 << (7 & n);
             }
 
-            n =- xSqr;//n = 3 * xSqr + ySqr
+            n -= xSqr;//n = 3 * xSqr + ySqr
             if (n <= limit && n % 12 == 7) {
                 sieve[n >> 3] ^= 1 << (7 & n);
             }
